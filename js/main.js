@@ -1,9 +1,7 @@
-let producto = prompt("ingrese un producto'teclado,mouse,monitor,gabinete'")
-let total=0
+    let ingreso = prompt("Ingrese un producto");
+    
+    while (ingreso !="Salir"){
+    console.log("Ingresaste el producto:" + ingreso);
+    ingreso=prompt("Ingresa un producto");
 
-while (producto!="SALIR"){
-    let precio= producto(producto);
-    total= total + precio;
-    alert("precio encarrito"+ total)
-    prodcuto=prompt("ingrese un producto'teclado,mouse,monitor,gabinete'")
-}
+    }
