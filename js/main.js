@@ -6,7 +6,8 @@
 
     }
  */
-    
+    /* simualador interactivo
+
     function sumar(numeroA,numeroB){
         let suma= numeroA+numeroB;
         return suma;
@@ -62,7 +63,26 @@
     let operacion = prompt('Ingresa el signo de la operacion: + - * /')
 
     mostrar(calcular(numero1,numero2,operacion)); 
-
+ */
 
 
     /* mostrar(sumar(numero1,numero2)); */
+
+    //  Arrays
+    let b=34;
+    const nombres = ["Ricardo" ,"Marcelo" ,"Agustin" ];
+    const numeros = [1,2,3,4,5,3,4,2,4,6,8,5,3];
+    const mixto = [true, 1, "hola amigola" ,{} , [12,34,54],b ];
+
+    let result= numeros [0] + numeros [10]
+
+    for (let i = 0 ;i < nombres.length; i++) {
+        console.log(nombres[i]);
+    }
+
+    console.log(numeros);
+
+    numeros.push(495,23,56,98);
+    console.log(numeros);
+    numeros.unshift(0);
+    console.log(numeros);
