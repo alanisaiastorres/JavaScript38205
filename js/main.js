@@ -69,7 +69,7 @@
     /* mostrar(sumar(numero1,numero2)); */
 
     //  Arrays
-    let b=34;
+   /*  let b=34;
     const nombres = ["Ricardo" ,"Marcelo" ,"Agustin" ];
     const numeros = [1,2,3,4,5,3,4,2,4,6,8,5,3];
     const mixto = [true, 1, "hola amigola" ,{} , [12,34,54],b ];
@@ -85,4 +85,10 @@
     numeros.push(495,23,56,98);
     console.log(numeros);
     numeros.unshift(0);
-    console.log(numeros);
+    console.log(numeros); */
+
+    //DOM
+    const h1 = document.getElementById("titulo"),
+    fecha = document.getElementById("fecha");
+    console.log (h1);
+    console.log (fecha);
