@@ -87,8 +87,24 @@
     numeros.unshift(0);
     console.log(numeros); */
 
-    //DOM
+    /* //DOM
     const h1 = document.getElementById("titulo"),
     fecha = document.getElementById("fecha");
     console.log (h1);
-    console.log (fecha);
+    console.log (fecha); // */
+
+    //Eventos
+    tituloSecundario = document.querySelector("h2"),
+    items =document.querySelectorAll(".numeros"),
+    botonEnviar= document.querySelector(".btn"), 
+    p=document.querySelector("#mensaje"),
+    inputIngreso=document.getElementById("#ingreso");
+
+    botonEnviar.addEventListener("click" , () => {
+        if (inputIngreso.value == "") {
+            p.innerText="Campo vacio";
+        }
+            else{
+                p.innerText=  `Bienvenido/a ${inputIngreso.value}`;
+            }
+    });
