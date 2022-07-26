@@ -94,17 +94,23 @@
     console.log (fecha); // */
 
     //Eventos
+    document.title="Clase 9 Comision 38205";
+    const tituloPrincipal = document.querySelector(".titulo-principal span"),
     tituloSecundario = document.querySelector("h2"),
     items =document.querySelectorAll(".numeros"),
     botonEnviar= document.querySelector(".btn"), 
-    p=document.querySelector("#mensaje"),
+    p=document.querySelector("#mensaje");
     inputIngreso=document.getElementById("#ingreso");
 
-    botonEnviar.addEventListener("click" , () => {
-        if (inputIngreso.value == "") {
-            p.innerText="Campo vacio";
-        }
-            else{
-                p.innerText=  `Bienvenido/a ${inputIngreso.value}`;
-            }
+    tituloPrincipal.innerText = "Clase 9";
+    tituloSecundario.innerText = "Eventos en JS";
+
+    console.log(items);
+    items.forEach((item) =>{
+        console.log(item);
     });
+    //addEventListener;
+    botonEnviar.addEventListener("click",() =>{
+    p.innerText="Hiciste clic en el boton enviar";
+    
+    })
